@@ -55,3 +55,57 @@ var myChart = new Chart(ctx, {
         }
     }
 }); 
+
+/******Register****** */
+
+function registerUser() {
+    var Firstname = document.getElementById("fname").value;
+    var Lastname = document.getElementById("lname").value;
+    var Email = document.getElementById("email").value;
+    var Mobile = document.getElementById("phone").value;
+    var Password = document.getElementById("password").value;
+    var Confirmpass = document.getElementById("conpassword").value;
+
+      db = window.openDatabase("farm", "2.0", "farmDB", 2*1024*1024);
+      db.transaction(function(tx) {
+       NewUser(Mobile, Firstname, Lastname, Email, Password, Confirmpass);
+       }, errorRegistration, successRegistration);
+       }
+
+       function NewUser(txt,Firstname, Lastname, Email, Password, Confirmpass) {
+       var _Query = ("INSERT INTO farm(UserName, FirstName, LastName, Email, Password, CPass) values ('"+ Mobile +"','"+ Firstname +"','"+ Lastname +"','"+ Email +"', '"+ Password +"', '"+ Confirmpass +"')");
+        alert(_Query);
+        tx.executeSql(_Query);
+        }
+        function errorRegistration(error) {
+     navigator.notification.alert(error, null, "Got an error mate", "cool");
+         }
+        function successRegistration() {
+        navigator.notification.alert("User data has been registered", null, "Information", "ok");
+          $( ":mobile-pagecontainer" ).pagecontainer( "change", "#page4" );
+      }
+
+/****Sign in*****/
+
+const email = document.getElementById('email')
+const password = document.getElementById('password')
+const form = document.getElementById("form")
+const erroeElement = document.getElementById('error')
+
+
+form.addEventListener('button', (e) => {
+    let messages = []
+    if(email.value === '' || email.value == null) {
+        messages.pus('The email or password you enterd is incorrect. Try again')
+    }
+
+    if (messages.length > e) {
+        e.preventDefault
+        errorrElement.innerText = messages.join(',')
+    }
+    e.preventDefault()
+})
+
+
+
+

@@ -9,7 +9,9 @@ body
     grid-template-columns: 20% 1fr 25%;
     grid-gap: 10px;
     height: 100vh;
-    margin: 0;
+    margin:0;
+    min-width: 100vh
+     
     }
   header, footer, article, nav, div {
     padding: 20px;
@@ -37,6 +39,7 @@ body
     background-color: #f1f1f1;
     width: 340px;
     height: 1000px;
+    margin: 0px;
     }
 
     /*logo*/
@@ -54,7 +57,7 @@ body
     font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 157px;
+    
     
 }
 
@@ -117,7 +120,7 @@ body
 #myMenu {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 100;
   }
   
   /* Style the navigation links */
@@ -143,12 +146,13 @@ body
     margin: 0 auto;
 }
 
-.text p1{
-  font-family: 'Fira Sans', sans-serif;
+.text p1{ 
+  font-size: 11px;
 }
 
 .text p{
-  font-weight: 13px;
+  font-weight: bold;
+  font-size: 8px;
 }
 
 
@@ -206,6 +210,35 @@ body
  }
 
  p4{
-     color: gree;
+     color: green;
  }
 
+ .drp{
+     display: flex;
+ }
+
+  
+/*****smallcards*****/
+.smallcard{
+  border: rgba(105, 62, 62, 0.637);
+}
+
+.green{
+  background: greenß;
+}
+
+.smallcard p{
+  color: #051805;
+  font-size: 15px;
+}
+
+.smallcard span{
+  font-size: 10px;
+  color: red;
+  font-weight:  bolder;
+
+}
+
+.smallcard label{
+  font-size: 13px;
+}

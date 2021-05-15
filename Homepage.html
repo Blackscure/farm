@@ -20,22 +20,24 @@
     <header class="pageHeader">
 <img class="logo" src="./images/ homelogo.png">
 <div class="dropdown my-menu">
-    <button class="btn btn-success
-                   dropdown-toggle" 
-            type="button"
-            id="dropdownMenuButton" 
-            data-toggle="dropdown" 
-            aria-haspopup="true" 
-            aria-expanded="false">
-            Nanaimo
-    </button>
-    <div class="dropdown-menu" 
-         aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" 
-           href="#">Bundi</a>
-        <a class="dropdown-item" 
-           href="#">New farm</a>
-    </div>
+  <button class="btn btn-success
+                 dropdown-toggle " 
+          type="button"
+          id="dropdownMenuButton" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false">
+      Dropdown button
+  </button>
+  <div class="dropdown-menu" 
+       aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" 
+         href="#">Action 1</a>
+      <a class="dropdown-item" 
+         href="#">Action 2</a>
+      <a class="dropdown-item" 
+         href="#">Action 3</a>
+  </div>
 </div>
     </header>
     <!--article-->
@@ -61,8 +63,7 @@
                 <a class="dropdown-item" 
                    href="#">New farm</a>
             </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
-
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -72,11 +73,51 @@
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Crop name">
                     </div>
                     <small>Filter your results</small>
+                    <div class="modal-btn">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Any Duration
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Extra early</a>
+                              <a class="dropdown-item" href="#">Early</a>
+                              <a class="dropdown-item" href="#">Medium Late</a>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              All Crop Categories
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Extra early</a>
+                              <a class="dropdown-item" href="#">Early</a>
+                              <a class="dropdown-item" href="#">Medium Late</a>
+                            </div>
+                          </div>
+    
+                          <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Popularity
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Extra early</a>
+                                <a class="dropdown-item" href="#">Early</a>
+                                <a class="dropdown-item" href="#">Medium Late</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="dragable">
+                        <small><b>50 results</b>recomended by <b>Elugulu<b>Butali</b></b></small>
+                          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                            kjdbkjbjkvz,kjsv`mhaebfn.`gvf`kksjfahsbflsjhfh
+                            vjhukjshfglikdjhfbkjdnhbn
+                            shvbh
+                          </div>
+                    </div>
                 </div>
               </div>
             </div>
         </div>
-         
           <!--Cards-->
           <div class="flex-container">
             <div class="card mb-4 border-0">
@@ -88,14 +129,14 @@
                         <p><b>Size</b>: 1.5acres</p>
                         <p> <b>Current stage</b>:Lorem ipsum, or lipsum as it is sometimes known, is dummy text used</p>
                         <p><b>Estimated yield</b>:90,00bags</p>
-                         <div class="sm-card">
-                            <p3>Pending Task</p3><br>
-                            <p2>Due: 1st January</p2>
-                            <div class="radio">
-                                <input type="radio" id="other" name="gender" value="other">
-                                <label for="other">Mark as complete</label>
-                            </div>
-                         </div>
+                    </div>
+                    <div class="card mb-2  ">
+                      <div class="smallcard">
+                        <p>Plant seed</p>
+                        <span>Due 1st jan</span><br>
+                        <input type="radio" id="other" name="complte" value="other">
+                        <label for="comp">Mark as complete</label>
+                      </div>
                     </div>
             </div>
             <div class="card mb-4 border-0">
@@ -108,6 +149,14 @@
                     <p> <b>Current stage</b>:Lorem ipsum, or lipsum as it is sometimes known, is dummy text used</p>
                     <p><b>Estimated yield</b>:80,00bags</p>
                 </div>
+                <div class="card mb-2  ">
+                  <div class="smallcard">
+                    <p>Plant seed</p>
+                    <span>Due 1st jan</span><br>
+                    <input id="green" type="radio" id="other" name="complte" value="other">
+                    <label for="comp">Mark as complte</label>
+                  </div>
+                </div>
             </div>
             <div class="card mb-4 border-0">
                 <div class="headcard3">
@@ -119,9 +168,19 @@
                     <p> <b>Current stage</b>:Lorem ipsum, or lipsum as it is sometimes known, is dummy text used</p>
                     <p><b>Estimated yield</b>:80,00bags</p>
                 </div>
+                <div class="card mb-2  ">
+                  <div class="smallcard">
+                    <p>Plant seed</p>
+                    <span>Due 1st jan</span><br>
+                    <input type="radio" id="other" name="complte" value="other">
+                    <label for="comp">Mark as complte</label>
+                  </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 offset-md-3">
+
+        <div class="col-md-8 offset-md-18">
+          <p>Farm perfomance</p>
             <div class="card-body">
                 <canvas id="myChart"></canvas>
             </div>
@@ -175,6 +234,11 @@
                 <p>1st December 2020 (1 month away)</p>
             </div>
           </div>
+          <div class="location">
+            <b>Size:</b><p>1 acre</p>
+            <b>Date created:</b><p>1/11/2020</p>
+          </div>
+          <button type="button" class="btn btn-outline-success">Edit Nanaimo farms</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
