@@ -19,8 +19,31 @@
 <body>
     <!--Header-->
     <header class="pageHeader">
-<img class="logo" src="./images/ homelogo.png">
+    <nav class="nav">
+      <img class="logo" src="./images/ homelogo.png">
+      <div class="dropdown-nav">
+        <button onclick="myFunction()" class="dropbtn">Nanaimo</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Bundi</a>
+          <a href="#">New Farm</a>
+        </div>
+      </div>
+</nav>
  
+<!--profile-->
+<div class="action">
+  <div class="profile">
+    <img src="img.jpg">
+  </div>
+<div class="menu">
+  <h3>John Mwananchi</h3>
+  <ul>
+    <li><a href="">My profile</a></li>
+    <li><a href="">Account</a></li>
+    <li><a href="">Sign Out</a></li>
+  </ul>
+</div>
+</div>
     </header>
     <!--article-->
     <article id="mainArticle">
@@ -45,7 +68,7 @@
                 <a class="dropdown-item" 
                    href="#">New farm</a>
             </div>
-            <button type="button" id="modal-btn"class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
+            <button type="button" id="modal-btn"class="btn btn-outline-success" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
