@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./homepage.css">
         <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap" rel="stylesheet"> 
@@ -19,30 +20,11 @@
     <!--Header-->
     <header class="pageHeader">
 <img class="logo" src="./images/ homelogo.png">
-<div class="dropdown my-menu">
-  <button class="btn btn-success
-                 dropdown-toggle " 
-          type="button"
-          id="dropdownMenuButton" 
-          data-toggle="dropdown" 
-          aria-haspopup="true" 
-          aria-expanded="false">
-      Dropdown button
-  </button>
-  <div class="dropdown-menu" 
-       aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" 
-         href="#">Action 1</a>
-      <a class="dropdown-item" 
-         href="#">Action 2</a>
-      <a class="dropdown-item" 
-         href="#">Action 3</a>
-  </div>
-</div>
+ 
     </header>
     <!--article-->
     <article id="mainArticle">
-        <div class="dropdown my-menu">
+        <div class="dropdown my-menu1">
             <button class="btn btn-success
                            dropdown-toggle" 
                     type="button"
@@ -63,7 +45,7 @@
                 <a class="dropdown-item" 
                    href="#">New farm</a>
             </div>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
+            <button type="button" id="modal-btn"class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">New Crop</button>
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -108,11 +90,7 @@
                     </div>
                     <div class="dragable">
                         <small><b>50 results</b>recomended by <b>Elugulu<b>Butali</b></b></small>
-                          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-                            kjdbkjbjkvz,kjsv`mhaebfn.`gvf`kksjfahsbflsjhfh
-                            vjhukjshfglikdjhfbkjdnhbn
-                            shvbh
-                          </div>
+                       
                     </div>
                 </div>
               </div>
@@ -239,7 +217,9 @@
             <b>Date created:</b><p>1/11/2020</p>
           </div>
           <button type="button" class="btn btn-outline-success">Edit Nanaimo farms</button>
-    </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

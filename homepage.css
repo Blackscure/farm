@@ -7,7 +7,7 @@ body
       "footer footer footer";
     grid-template-rows: 60px 1fr 60px;
     grid-template-columns: 20% 1fr 25%;
-    grid-gap: 10px;
+    grid-gap: 4px;
     height: 100vh;
     margin:0;
     min-width: 100vh
@@ -27,7 +27,8 @@ body
   }
   #mainArticle { 
     grid-area: article;  
-    background: white;    
+    background: white;  
+    margin: auto 0;  
     
     }
   #mainNav { 
@@ -242,3 +243,16 @@ body
 .smallcard label{
   font-size: 13px;
 }
+
+ 
+#modal-btn{
+  float: right;
+  margin-left: 660px;
+}
+
+.btn btn-success
+dropdown-toggle button{
+  margin-left: 480px;
+}
+
+ 
