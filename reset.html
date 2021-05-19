@@ -5,47 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./register.css">
+    <link rel="stylesheet" type="text/css" href="./ login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-    <title>Register</title>
+    <title>Login</title>
 </head>
 <body>
     <section class="container-fluild bg">
         <section class="row justify-content-center">
             <section class="col-12 col-sm-6 col-md-3">
-                <form class="form-container" id="createAccount">
+                <div id="error"></div>
+                <form action= "/" method="GET" id="login" class="form-container">
                     <img class="logo" src="./images/ logo.png">
-                    <h3 class="header">Create an account</h3>
-                    <div class="row">
-                        <div class="col">
-                          <input type="text" class="form-control" id="fname" placeholder="First name">
-                        </div>
-                        <div class="col">
-                          <input type="text" class="form-control"  id="lname"placeholder="Last name">
-                        </div>
-                      </div>
+                    <h3 class="header">Reset Your Password</h3>
                     <div class="form-group">
-                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email address(you@example.com)"><br>
-                      <input type="phone nummber" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Mobile phone number"><br>
-                      <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Password(at least 8 charecters long)"><br>
-                      <input type="password" class="form-control" id="conpassword" placeholder="Confirm assword">
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email address or username"><br>
                     </div>
+                   
                     <button class="btn "type="button">
-                        Register
+                        Recover Password
                         </button>
-                        <p class="paragraph">Already have an account<span> <a style = " color: green; " href="Login.html">Sign in</a> </span></p>
-                        
+                        <p class="paragraph">Don't have an account? click<a style = " color: green; " href="Register.html">here</a> to create one</p>
+                        <p class="paragraph">Already have an account ?<a style = " color: green; " href="login.html">Sign on</a> to create one</p>
                   </form>
             </section>
         </section>
-
     </section>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+<script src="./main.js"></script>
 </body>
 </html>
